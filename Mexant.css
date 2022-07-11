@@ -752,6 +752,14 @@ footer {
   .comp-name {
     margin: 0 auto;
   }
+
+  /* Footer */
+  footer {
+    padding: 0.5rem;
+  }
+  footer > p {
+    text-align: center;
+  }
 }
 
 /*ABOUT US PAGE CSS STYLING*/
