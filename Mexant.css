@@ -25,7 +25,7 @@ nav {
   position: sticky;
   top: 0;
   background-color: #162243;
-  z-index: 1;
+  z-index: 10;
   padding: 1rem 7vw;
 }
 nav > ul {
@@ -413,7 +413,6 @@ footer {
 }
 
 /* MEDIA QUERIES FOR HOME PAGE */
-
 @media screen and (min-width: 769px) and (max-width: 1050px) {
   /* Navigation Bar */
   nav {
@@ -534,7 +533,7 @@ footer {
     gap: 1.5rem;
   }
   #business-solutions h2 {
-    width: 80%;
+    width: 100%;
     text-align: center;
   }
 
@@ -766,7 +765,6 @@ footer {
 }
 
 /*ABOUT US PAGE CSS STYLING*/
-
 #AU-header {
   background: url(images/heading-bg.jpg);
   background-repeat: no-repeat;
@@ -784,7 +782,7 @@ footer {
 #AU-header-txt hr {
   background-color: white;
   height: 0.4rem;
-  width: 7%;
+  width: max(12%, 80px);
   border-style: none;
   border-radius: 0.4rem;
   margin: 1rem auto;
@@ -828,13 +826,13 @@ footer {
   border-radius: 0.3rem;
   box-shadow: 1px 1px 12px #e9e8e8;
 }
-.steps-head {
+.step-cards-head {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 2rem;
 }
-.steps-head h2 {
+.step-cards-head h2 {
   font-size: x-large;
   font-weight: 600;
 }
@@ -847,7 +845,67 @@ footer {
   transform: translate(0, 0.3rem);
 }
 
-/*$desktop:1200px;
+/* MEDIA QUERIES FOR ABOUT US PAGE */
+@media (min-width: 769px) and (max-width: 991px) {
+  .AU-afterhdr-cont {
+    padding: 5rem 12vw;
+    gap: 3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .steps-cont {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 560px) and (max-width: 768px) {
+  .AU-afterhdr-cont {
+    padding: 5rem auto;
+    gap: 3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .steps-cont {
+    padding: 5rem 7vw;
+    grid-template-columns: 1fr;
+  }
+  .steps {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 559px) {
+  #AU-header-txt {
+    padding: 5rem 0 7rem;
+    text-align: center;
+  }
+  #AU-header-txt h1 {
+    font-size: 2.8rem;
+  }
+  .AU-afterhdr-cont {
+    padding: 5rem 3vw;
+    gap: 2.5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .steps-cont {
+    padding: 5rem 3vw;
+    gap: 3rem;
+    grid-template-columns: 1fr;
+  }
+  .steps {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+  }
+  .step-cards {
+    padding: 1.5rem 1rem;
+  }
+  .step-cards-head {
+    margin-bottom: 1rem;
+  }
+}
+/* $desktop:1200px;
 $laptop:1024px;
 $tablet:768px;
-$phone:480px;*/
+$phone:480px; */
