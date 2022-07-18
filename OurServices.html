@@ -6,107 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MEXANT</title>
     <link rel="stylesheet" href="Mexant.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./all.min.css" />
+    <script src="./myScript.js"></script>
   </head>
   <body>
-    <header id="AU-header">
-      <nav>
-        <!--Logo-->
-        <div class="logo-cont">
-          <a href="index.html"
-            ><img src="images/logo.png" alt="Mexant Logo" />
-          </a>
+    <nav>
+      <!--Logo-->
+      <div class="logo-cont">
+        <a href="index.html"
+          ><img src="images/logo.png" alt="Mexant Logo" />
+        </a>
+      </div>
+      <!--Logo Ends-->
+
+      <!--Menu Items-->
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="index.html">Services</a>
+        </li>
+        <li>
+          <a href="index.htm">About</a>
+        </li>
+
+        <!--"Pages" Sub Menu-->
+        <div class="subnav">
+          <button class="subnav-btn">
+            <li>
+              <a href="#">Pages <i class="fa fa-angle-down"></i></a>
+            </li>
+          </button>
+          <div class="subnav-content">
+            <a href="AboutUs.html">About Us</a>
+            <a href="OurServices.html">Our Services</a>
+            <a href="ContactUs.html">Contact us</a>
+          </div>
         </div>
-        <!--Logo Ends-->
+        <!--"Pages" Sub Menu Ends-->
+
+        <li>
+          <a href="index.htm">Testimonials</a>
+        </li>
+        <li>
+          <a href="" class="grn-btn">Contact Support</a>
+        </li>
+      </ul>
+      <!--Menu Items Ends-->
+    
+      <div class="container">
+        <label for="hamburger" class="hamburger-cont">
+          <input type="checkbox" name="hamburger" id="hamburger">
   
-        <!--Menu Items-->
-        <ul>
-          <li>
-            <a href="#home-header">Home</a>
-          </li>
-          <li>
-            <a href="#services">Services</a>
-          </li>
-          <li>
-            <a href="#about-us">About</a>
-          </li>
-  
-          <!--"Pages" Sub Menu-->
-          <div class="subnav">
-            <button class="subnav-btn">
-              <li>
-                <a href="#">Pages <i class="fa fa-angle-down"></i></a>
-              </li>
-            </button>
-            <div class="subnav-content">
-              <a href="AboutUs.html">About Us</a>
-              <a href="OurServices.html">Our Services</a>
-              <a href="ContactUs.html">Contact us</a>
+          <span class="span1"></span>
+          <span class="span2"></span>
+          <span class="span3"></span>
+
+          <!-- MOBILE MENU DROP DOWN-->
+          <div class="mobile-menu-cont">
+            <div class="mobile-menu">
+              <ul>
+                <li>
+                  <a href="index.htm">Home</a>
+                </li>
+                <li>
+                  <a href="index.htm">Services</a>
+                </li>
+                <li>
+                  <a href="index.html">About</a>
+                </li>
+            
+                <!--"Pages" Sub Menu-->
+                <div class="subnav">
+                  <button class="subnav-btn">
+                    <li>
+                      <a href="#">Pages <i class="fa fa-angle-down"></i></a>
+                    </li>
+                  </button>
+                  <div class="subnav-content">
+                    <a href="AboutUs.html">About Us</a>
+                    <a href="OurServices.html">Our Services</a>
+                    <a href="ContactUs.html">Contact us</a>
+                  </div>
+                </div>
+                <!--"Pages" Sub Menu Ends-->
+            
+                <li>
+                  <a href="index.htm">Testimonials</a>
+                </li>
             </div>
           </div>
-          <!--"Pages" Sub Menu Ends-->
+          <!-- MOBILE MENU DROP DOWN -->
   
-          <li>
-            <a href="#testim">Testimonials</a>
-          </li>
-          <li>
-            <a href="" class="grn-btn">Contact Support</a>
-          </li>
-        </ul>
-        <!--Menu Items Ends-->
-      
-        <div class="container">
-          <label for="hamburger" class="hamburger-cont">
-            <input type="checkbox" name="hamburger" id="hamburger">
-    
-            <span class="span1"></span>
-            <span class="span2"></span>
-            <span class="span3"></span>
-  
-            <!-- MOBILE MENU DROP DOWN-->
-            <div class="mobile-menu-cont">
-              <div class="mobile-menu">
-                <ul>
-                  <li>
-                    <a href="#home-header">Home</a>
-                  </li>
-                  <li>
-                    <a href="#services">Services</a>
-                  </li>
-                  <li>
-                    <a href="#about-us">About</a>
-                  </li>
-              
-                  <!--"Pages" Sub Menu-->
-                  <div class="subnav">
-                    <button class="subnav-btn">
-                      <li>
-                        <a href="#">Pages <i class="fa fa-angle-down"></i></a>
-                      </li>
-                    </button>
-                    <div class="subnav-content">
-                      <a href="AboutUs.html">About Us</a>
-                      <a href="OurServices.html">Our Services</a>
-                      <a href="ContactUs.html">Contact us</a>
-                    </div>
-                  </div>
-                  <!--"Pages" Sub Menu Ends-->
-              
-                  <li>
-                    <a href="#testim">Testimonials</a>
-                  </li>
-              </div>
-            </div>
-            <!-- MOBILE MENU DROP DOWN -->
-    
-          </label>
-        </div>
-      </nav>
+        </label>
+      </div>
+    </nav>
 
+    <header id="AU-header">
       <!--Header Text-->
       <div id="AU-header-txt">
         <h1>Our Services</h1>
@@ -115,22 +116,38 @@
       <!--Header Text Ends-->
     </header>
 
-    <section class="AU-afterhdr-cont">
-      <div>
-        <img src="" alt="" />
-        <div></div>
+    <section class="OS-afterhdr-cont">
+      <div class="OS-afterhdr-item">
+        <img src="./images/service-image-01.jpg" alt="Picture containing bulbs" />
+        <div class="item-txt">
+          <div><i class="fa-solid fa-box-archive fa-4x"></i></div>
+          <h2>Digital Currencies</h2>
+          <p>You will see a bunch of free CSS templates when you search on Google. 
+            TemplateMo is the best one because it is 100% free for anyone. 
+            We do not ask you anything in return. You are free to use our templates for any purpose.</p>
+        </div>
       </div>
+
       <hr />
 
-      <div>
-        <img src="" alt="" />
-        <div></div>
+      <div class="OS-afterhdr-item item2">
+        <img src="./images/service-details-02.jpg" alt="Painter at work" />
+        <div class="item-txt">
+          <div><i class="fa-solid fa-box-archive fa-4x"></i></div>
+          <h2>Financial Solutions</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et ex massa. In ac laoreet urna. Curabitur eu enim nibh. Phasellus sodales nisi vel leo aliquam, ut tempus augue hendrerit. Pellentesque eu risus tincidunt, condimentum eros in, auctor augue. Vivamus et urna blandit, varius sapien sed.</p>
+        </div>
       </div>
+
       <hr />
 
-      <div>
-        <img src="" alt="" />
-        <div></div>
+      <div class="OS-afterhdr-item">
+        <img src="./images/service-details-03.jpg" alt="Image of a busy workdesk" />
+        <div class="item-txt">
+          <div><i class="fa-solid fa-box-archive fa-4x"></i></div>
+          <h2>Cryptocurrency Exchanges</h2>
+          <p>Mauris id efficitur ante, vitae ultrices metus. Donec et nunc massa. Nullam non felis dignissim, dapibus turpis semper, vulputate lorem. Nam volutpat posuere tellus, in porttitor justo interdum nec. Aenean in dapibus risus, in euismod ligula. Aliquam vel scelerisque elit.
+        </div>
       </div>
     </section>
 
@@ -147,88 +164,35 @@
       </div>
     </section>
 
-    <section class="steps-cont">
-      <div class="about-us-txt">
-        <h3>Please tell us about your idea and how you want it to be</h3>
-        <p>
-          If you need more HTML templates, you can try visiting TooCSS blog and
-          Tooplate websites. You can get many good templates on those websites.
-        </p>
-        <p>
-          Nulla non placerat neque, a gravida elit. Vestibulum ante ipsum primis
-          in faucibus orci luctus et ultrices posuere cubilia curae; Morbi sed
-          dolor condimentum tellus commodo volutpat non malesuada turpis
-        </p>
-        <button class="grn-btn">Discover More</button>
+    <!-- Upgrade Your Knowledge -->
+    <section class="upgrade-cont">
+
+      <div class="section-head">
+        <h4 class="orng-txt">INVESTMENT IN DETAILS</h4>
+        <h2>Upgrade Your Knowledge</h2>
       </div>
 
-      <!-- Steps -->
-      <div class="steps">
-        <div class="step-cards">
-          <div class="step-cards-head">
-            <h2>First Step</h2>
-            <div class="step-number">
-              <i class="fa-solid fa-0 fa-2x"></i>&nbsp;<i
-                class="fa-solid fa-1 fa-2x"
-              ></i>
-            </div>
-          </div>
-          <p>
-            Pellentesque ipsum elit, congue a sapien laoreet, pellentesque
-            ultricies risus.
-          </p>
-        </div>
+      <div class="OS-btns about-us-btns">
+        <button type="button" onclick="">Crypto Investments</button>
+        <button type="button" onclick="">Cryptocurrency Market</button>
+        <button type="button" onclick="">Financial Planning</button>
+       </div>
 
-        <div class="step-cards">
-          <div class="step-cards-head">
-            <h2>Second Step</h2>
-            <div class="step-number">
-              <i class="fa-solid fa-0 fa-2x"></i>&nbsp;<i
-                class="fa-solid fa-2 fa-2x"
-              ></i>
-            </div>
-          </div>
-          <p>
-            Pellentesque ipsum elit, congue a sapien laoreet, pellentesque
-            ultricies risus.
-          </p>
-        </div>
-
-        <div class="step-cards">
-          <div class="step-cards-head">
-            <h2>Third Step</h2>
-            <div class="step-number">
-              <i class="fa-solid fa-0 fa-2x"></i>&nbsp;<i
-                class="fa-solid fa-3 fa-2x"
-              ></i>
-            </div>
-          </div>
-          <p>
-            Pellentesque ipsum elit, congue a sapien laoreet, pellentesque
-            ultricies risus.
-          </p>
-        </div>
-
-        <div class="step-cards">
-          <div class="step-cards-head">
-            <h2>Fourth Step</h2>
-            <div class="step-number">
-              <i class="fa-solid fa-0 fa-2x"></i>&nbsp;<i
-                class="fa-solid fa-4 fa-2x"
-              ></i>
-            </div>
-          </div>
-          <p>
-            Pellentesque ipsum elit, congue a sapien laoreet, pellentesque
-            ultricies risus.
-          </p>
+      <div class="upgrade-card">
+        <img src="./images/service-details-01.jpg" alt="">
+        <div class="upgrade-card-txt">
+          <h2>HLearn more about cryptocurrency investments</h2>
+          <p>Pellentesque ipsum elit, congue a sapien laoreet, pellentesque ultricies risus. Nulla facilisi. Mauris vitae lacinia magna. Nam euismod sapien sit amet elementum blandit. Nulla non placerat neque.</p>
+          <em>- Financial Planning and Investments <br>
+            - Business Networking <br>
+            - Managing Digital Assets</em>
         </div>
       </div>
     </section>
 
     <!--Company Name-->
 
-    <div id="comp-name-cont">
+    <section id="comp-name-cont">
       <div class="comp-name">
         <img src="images/client-01.png" alt="Company Name" />
       </div>
@@ -251,13 +215,13 @@
       <div class="comp-name">
         <img src="images/client-01.png" alt="Company Name" />
       </div>
-    </div>
+    </section>
 
     <!--Footer-->
     <footer>
       <p>Copyright © 2022 Mexant Co., Ltd. All Rights Reserved.</p>
       <p>Designed by <span class="orng-txt">TemplateMo</span></p>
     </footer>
-    <script src="all.min.js"></script>
+
   </body>
 </html>

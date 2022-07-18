@@ -7,7 +7,10 @@
 body {
   scroll-behavior: smooth;
 }
-
+::selection {
+  background-color: #f73f11;
+  color: white;
+}
 #home-header {
   min-height: max-content;
   background: url(images/heading-bg.jpg);
@@ -50,6 +53,9 @@ nav ul li a:active,
 .mobile-menu ul li a:hover,
 .mobile-menu ul li a:active {
   color: #fe6c42;
+}
+nav .grn-btn:hover {
+  color: white;
 }
 .hamburger-cont > input,
 .hamburger-cont {
@@ -232,7 +238,6 @@ nav ul li .grn-btn {
 }
 
 /*Business Solutions*/
-
 #business-solutions {
   background: url(images/cta-bg.jpg);
   display: flex;
@@ -250,7 +255,6 @@ nav ul li .grn-btn {
 }
 
 /*About Us*/
-
 #about-us {
   color: #162243;
   margin-inline: 7vw;
@@ -320,7 +324,6 @@ nav ul li .grn-btn {
 }
 
 /*Get A Financial Plan*/
-
 .fin-plan {
   background: url(images/calculator-bg.jpg);
   background-repeat: no-repeat;
@@ -364,7 +367,6 @@ form select,
 }
 
 /*Testimonials*/
-
 #testim {
   color: #162243;
   margin: 9vw 17vw;
@@ -391,7 +393,6 @@ form select,
 }
 
 /*Company Name*/
-
 #comp-name-cont {
   padding: 5rem 1rem;
   display: grid;
@@ -401,7 +402,6 @@ form select,
 }
 
 /* Footer */
-
 footer {
   padding: 2rem;
   display: flex;
@@ -412,7 +412,7 @@ footer {
   background-color: #10182fff;
 }
 
-/* MEDIA QUERIES FOR HOME PAGE */
+/* MEDIA QUERIES FOR HOME PAGE START HERE*/
 @media screen and (min-width: 769px) and (max-width: 1050px) {
   /* Navigation Bar */
   nav {
@@ -585,6 +585,10 @@ footer {
     padding: 3rem 10vw;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+  }
+  .comp-name {
+    width: fit-content;
+    margin: 0 auto;
   }
 }
 
@@ -763,8 +767,9 @@ footer {
     text-align: center;
   }
 }
+/* MEDIA QUERIES FOR HOME PAGE END HERE*/
 
-/*ABOUT US PAGE CSS STYLING*/
+/*ABOUT US PAGE CSS STYLING STARTS HERE*/
 #AU-header {
   background: url(images/heading-bg.jpg);
   background-repeat: no-repeat;
@@ -782,7 +787,7 @@ footer {
 #AU-header-txt hr {
   background-color: white;
   height: 0.4rem;
-  width: max(12%, 80px);
+  width: max(10%, 80px);
   border-style: none;
   border-radius: 0.4rem;
   margin: 1rem auto;
@@ -844,8 +849,9 @@ footer {
 .step-cards:hover .fa-2x {
   transform: translate(0, 0.3rem);
 }
+/*ABOUT US PAGE CSS STYLING ENDS HERE*/
 
-/* MEDIA QUERIES FOR ABOUT US PAGE */
+/* MEDIA QUERIES FOR ABOUT US PAGE START HERE*/
 @media (min-width: 769px) and (max-width: 991px) {
   .AU-afterhdr-cont {
     padding: 5rem 12vw;
@@ -905,7 +911,85 @@ footer {
     margin-bottom: 1rem;
   }
 }
+/* MEDIA QUERIES FOR ABOUT US PAGE START HERE*/
+
+/*OUR SERVICES PAGE CSS STYLING STARTS HERE*/
+.OS-afterhdr-cont {
+  padding: 5rem 7vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+}
+.OS-afterhdr-cont > hr {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #e1f5ea;
+}
+.OS-afterhdr-item {
+  display: flex;
+  gap: 4rem;
+  color: #162243;
+}
+.OS-afterhdr-item img {
+  width: 50%;
+  max-height: 314px;
+  background-position: center;
+  background-size: cover;
+}
+.item-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50%;
+}
+.item2 > .item-txt {
+  order: -1;
+}
+.item-txt > div {
+  background-color: #e1f5ea;
+  width: fit-content;
+  border-radius: 0.3rem;
+  padding: 1.5rem 1.7rem;
+}
+.item-txt > h2 {
+  font-size: 2.25rem;
+}
+.upgrade-cont {
+  padding: 5rem 13vw;
+  color: #162243;
+}
+.OS-btns {
+  width: fit-content;
+  margin: 0 auto 3rem;
+}
+.upgrade-card {
+  display: grid;
+  width: fit-content;
+  grid-template-columns: auto auto;
+  gap: 4rem;
+  border-radius: 0.4rem;
+  padding: 3rem 3rem 3rem 1rem;
+  box-shadow: 1px 1px 12px #e9e8e8;
+}
+.upgrade-card > img {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+.upgrade-card-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  width: 80%;
+}
+.upgrade-card-txt > h2 {
+  width: 80%;
+  line-height: 2.5rem;
+}
+.upgrade-card-txt > em {
+  line-height: 2rem;
+}
+/*OUR SERVICES PAGE CSS STYLING ENDS HERE*/
+
 /* $desktop:1200px;
 $laptop:1024px;
 $tablet:768px;
-$phone:480px; */
+$phone:480px; */ ;
