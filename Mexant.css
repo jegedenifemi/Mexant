@@ -29,10 +29,14 @@ nav {
   top: 0;
   background-color: #162243;
   z-index: 10;
-  padding: 1rem 7vw;
+  padding: 0.3rem 7vw;
+}
+nav .logo-cont img {
+  width: 14rem;
+  height: 5rem;
 }
 nav > ul {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -57,6 +61,7 @@ nav ul li a:active,
 nav .grn-btn:hover {
   color: white;
 }
+.container,
 .hamburger-cont > input,
 .hamburger-cont {
   display: none;
@@ -505,6 +510,7 @@ footer {
   nav > ul {
     display: none;
   }
+  .container,
   .hamburger-cont {
     display: block;
   }
@@ -599,6 +605,7 @@ footer {
   nav > ul {
     display: none;
   }
+  .container,
   .hamburger-cont {
     display: block;
   }
@@ -911,7 +918,7 @@ footer {
     margin-bottom: 1rem;
   }
 }
-/* MEDIA QUERIES FOR ABOUT US PAGE START HERE*/
+/* MEDIA QUERIES FOR ABOUT US PAGE END HERE*/
 
 /*OUR SERVICES PAGE CSS STYLING STARTS HERE*/
 .OS-afterhdr-cont {
@@ -959,8 +966,10 @@ footer {
   color: #162243;
 }
 .OS-btns {
-  width: fit-content;
-  margin: 0 auto 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
 }
 .upgrade-card {
   display: grid;
@@ -988,6 +997,187 @@ footer {
   line-height: 2rem;
 }
 /*OUR SERVICES PAGE CSS STYLING ENDS HERE*/
+
+/* MEDIA QUERIES FOR OUR SERVICES PAGE START HERE */
+@media (min-width: 769px) and (max-width: 991px) {
+  .OS-afterhdr-cont {
+    padding: 5rem 12vw;
+  }
+  .OS-afterhdr-item {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .OS-afterhdr-item img,
+  .item-txt {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .item-txt > h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  .upgrade-cont {
+    padding: 5rem 12vw;
+  }
+  .section-head > h4 {
+    font-size: small;
+    font-weight: 800;
+  }
+  .section-head > h2 {
+    font-weight: 800;
+    font-size: 26px;
+  }
+  .OS-btns > button {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  .upgrade-card {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 0;
+  }
+  .upgrade-card > img {
+    border-radius: 0.4rem;
+    width: 100%;
+  }
+  .upgrade-card-txt {
+    padding: 0 2rem 2rem;
+    gap: 1.6rem;
+    width: 100%;
+  }
+  .upgrade-card-txt > h2 {
+    width: 100%;
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 2rem;
+  }
+  .upgrade-card-txt > em,
+  .upgrade-card-txt > p {
+    font-size: 15px;
+  }
+  .upgrade-card-txt > em {
+    line-height: 2rem;
+  }
+}
+@media screen and (min-width: 560px) and (max-width: 768px) {
+  .OS-afterhdr-cont {
+    padding: 5rem 5vw;
+  }
+  .OS-afterhdr-item {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .OS-afterhdr-item img,
+  .item-txt {
+    width: 100%;
+  }
+  .item-txt > h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+  }
+  .upgrade-cont {
+    padding: 0rem 7vw 5rem;
+  }
+  .section-head > h4 {
+    font-size: small;
+    font-weight: 800;
+  }
+  .section-head > h2 {
+    font-weight: 800;
+    font-size: 26px;
+  }
+  .OS-btns > button {
+    padding: 0.6rem 0.4rem;
+    font-size: 0.8rem;
+  }
+  .upgrade-card {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 0;
+  }
+  .upgrade-card > img {
+    border-radius: 0.4rem;
+    width: 100%;
+  }
+  .upgrade-card-txt {
+    padding: 0 2rem 2rem;
+    gap: 1.6rem;
+    width: 100%;
+  }
+  .upgrade-card-txt > h2 {
+    width: 100%;
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 2rem;
+  }
+  .upgrade-card-txt > em,
+  .upgrade-card-txt > p {
+    font-size: 15px;
+  }
+  .upgrade-card-txt > em {
+    line-height: 2rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 559px) {
+  .OS-afterhdr-cont {
+    padding: 5rem 2vw;
+  }
+  .OS-afterhdr-item {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .OS-afterhdr-item img,
+  .item-txt {
+    width: 100%;
+  }
+  .item-txt > h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+  }
+  .upgrade-cont {
+    padding: 0 5vw 3rem;
+  }
+  .section-head > h4 {
+    font-size: small;
+    font-weight: 800;
+  }
+  .section-head > h2 {
+    font-weight: 800;
+    font-size: 26px;
+  }
+  .OS-btns > button {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  .upgrade-card {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 0;
+  }
+  .upgrade-card > img {
+    border-radius: 0.4rem;
+    width: 100%;
+  }
+  .upgrade-card-txt {
+    padding: 0 1rem 1rem;
+    gap: 1.4rem;
+    width: 100%;
+  }
+  .upgrade-card-txt > h2 {
+    width: 100%;
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 2rem;
+  }
+  .upgrade-card-txt > em,
+  .upgrade-card-txt > p {
+    font-size: 15px;
+  }
+  .upgrade-card-txt > em {
+    line-height: 2rem;
+  }
+}
+/* MEDIA QUERIES FOR OUR SERVICES PAGE START HERE */
 
 /* $desktop:1200px;
 $laptop:1024px;
