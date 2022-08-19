@@ -92,8 +92,26 @@ nav .grn-btn:hover {
   z-index: -1;
   transition: 0.5s ease-in-out;
 }
+@keyframes mobileMenu {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(29.25rem);
+  }
+}
 .hamburger-cont > input:checked ~ .mobile-menu-cont {
-  top: 5.8rem;
+  animation: mobileMenu 1s ease forwards;
 }
 .mobile-menu {
   display: flex;
@@ -356,6 +374,9 @@ nav ul li .grn-btn {
 form {
   padding-block: 4rem 2rem;
 }
+.fin-plan form label {
+  font-size: 14px;
+}
 form select,
 #name,
 #email,
@@ -368,7 +389,10 @@ form select,
   color: white;
   border: none;
   width: 100%;
-  margin-bottom: 2.5rem;
+  margin-block: 0.6rem 2.5rem;
+}
+.fin-plan form fieldset {
+  border: none;
 }
 
 /*Testimonials*/
@@ -418,6 +442,17 @@ footer {
 }
 
 /* MEDIA QUERIES FOR HOME PAGE START HERE*/
+
+@media screen and (min-width: 1050px) {
+  .form-duo {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+  }
+  .form-duo fieldset {
+    flex-basis: 50%;
+  }
+}
 @media screen and (min-width: 769px) and (max-width: 1050px) {
   /* Navigation Bar */
   nav {
@@ -1184,14 +1219,16 @@ footer {
   width: fit-content;
   margin: 5rem auto 6rem;
   position: relative;
+  border-radius: 0.5rem;
 }
 .contact-map iframe {
-  width: 1027px;
-  height: 500px;
+  border-radius: 0.5rem;
+  width: 1200px;
+  height: 480px;
 }
 .CU-cards-cont {
   display: flex;
-  gap: 2.5rem;
+  gap: 3rem;
   justify-content: center;
   position: absolute;
   width: 100%;
@@ -1202,10 +1239,10 @@ footer {
   display: flex;
   background-color: white;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.3rem;
   align-items: center;
   box-shadow: 1px 1px 12px #e9e8e8;
-  padding: 2.5rem 3.5rem;
+  padding: 2rem 3.5rem;
   border-radius: 0.3rem;
   color: #162243;
   transition: 0.6s ease;
@@ -1269,30 +1306,31 @@ footer {
     width: fit-content;
     margin: 5rem auto 6rem;
     position: relative;
-    border: 1px solid red;
     padding: auto;
   }
-  .contact-map iframe {
-    width: 700px;
+  .contact-map iframe,
+  .mapouter,
+  .gmap_canvas {
+    width: 00px;
     height: 500px;
   }
   .CU-cards-cont {
     display: flex;
-    gap: 2.5rem;
+    gap: 2rem;
     justify-content: center;
     position: absolute;
     width: 100%;
-    bottom: -8rem;
+    bottom: -5.7rem;
     z-index: 3;
   }
   .CU-cards {
     display: flex;
     background-color: white;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.3rem;
     align-items: center;
     box-shadow: 1px 1px 12px #e9e8e8;
-    padding: 2.5rem 3.5rem;
+    padding: 1.5rem 4.5rem;
     border-radius: 0.3rem;
     color: #162243;
     transition: 0.6s ease;
